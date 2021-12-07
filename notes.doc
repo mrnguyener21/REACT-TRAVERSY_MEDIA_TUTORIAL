@@ -1,1 +1,68 @@
-testing working branch
+Below is the link to the github repository for the tutorial
+https://github.com/bradtraversy/react-crash-2021
+
+
+TOPIC -Files & folders
+root dev is what amkes everything happen when you render it
+
+
+
+TOPIC -App component & JSX
+App.js is the root (main) component
+
+
+TOPIC -Expressions in JSX
+
+TOPIC -Creating a component
+
+TOPIC -Component Props
+
+TOPIC -PropTypes
+
+TOPIC -Styling
+
+TOPIC -Button Component
+
+TOPIC -Events
+
+TOPIC -Tasks Component
+
+TOPIC -Create a list with .map()
+
+TOPIC -State & useState Hook
+
+TOPIC -Global state
+
+TOPIC -Task Component
+
+TOPIC -Icons with react-icons
+
+TOPIC -Delete task & prop drilling
+
+TOPIC -Optional message if no tasks
+
+TOPIC -Toggle reminder & conditional styling
+
+TOPIC - Add Task Form
+
+TOPIC - Form input state (controlled components)
+
+TOPIC - Add task submit
+
+TOPIC - showAddTask state
+
+TOPIC - Button toggle
+
+TOPIC - Build for production
+
+TOPIC - JSON Server
+
+TOPIC - useEffect Hook & Fetch tasks from server
+
+TOPIC - Delete task from server
+
+TOPIC - Add task to server
+
+TOPIC - Toggle reminder on server
+
+TOPIC - Routing, footer & about
