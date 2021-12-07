@@ -8,8 +8,10 @@ root dev is what amkes everything happen when you render it
 
 
 TOPIC -App component & JSX
-App.js is the root (main) component
-
+-App.js is the root (main) component
+-classname is used instead of class
+-in the app.js file get rid of what swithin the div so you can start replacing it with your content
+-logo.svg, app.css, app.test.js & setupTests.js we can get rid of
 
 TOPIC -Expressions in JSX
 
