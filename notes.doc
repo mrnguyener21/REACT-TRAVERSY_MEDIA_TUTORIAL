@@ -16,8 +16,13 @@ TOPIC -App component & JSX
 -react framents <></> are good to use when needing tor eturn multiple elements and are just empty html tags
 
 TOPIC -Expressions in JSX
+-javascript is written before the return(the return contains the JSX)
+-javscript is written in {} when writing in JSX in the return section
+
+
 
 TOPIC -Creating a component
+-to create different components of a website(header, pages, sections) it will all be done within the component folder
 
 TOPIC -Component Props
 
