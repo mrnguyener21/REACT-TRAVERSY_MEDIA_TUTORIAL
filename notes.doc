@@ -82,8 +82,8 @@ TOPIC -Styling
     //notice how since we are using a style variable we are only using single brackets when we call it in the styles argument for the h1 tag
 
 
-TOPIC -Button Component
-
+TOPIC -Button Component (EXAMPLE FOR REUSABLE REACT COMPONENT)
+-you can create anything into a component such as a buttons component so you can reuse the component without having to recreate the button everytime
 TOPIC -Events
 
 TOPIC -Tasks Component
