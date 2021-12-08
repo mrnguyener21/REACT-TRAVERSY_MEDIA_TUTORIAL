@@ -84,13 +84,33 @@ TOPIC -Styling
 
 TOPIC -Button Component (EXAMPLE FOR REUSABLE REACT COMPONENT)
 -you can create anything into a component such as a buttons component so you can reuse the component without having to recreate the button everytime
-TOPIC -Events
 
-TOPIC -Tasks Component
+
+TOPIC -Events
+-when using react components, if you were to have an event it's best to pass the event as a prop to have it properly executed
+
+
 
 TOPIC -Create a list with .map()
+- you just map through your array to turn it in a list
+-can also return jsx elements with map
+
+
 
 TOPIC -State & useState Hook
+-to use state in react you use a Hook called useState below is how you import it:
+    import {useState} from 'react
+-state is immutable
+-you would use set to add or change things
+-in the example below, dailyData is the state that we use to fetch what is being mapped through and if we were to add or change anything to it we would then use setDailyData since state is immutable and is a one way road
+        const [dailyData, setDailyData] = useState([])
+
+    useEffect(() => {
+        const fetchAPI = async () => {
+            setDailyData(await fetchDailyData());
+        }
+        fetchAPI();
+    }, [])
 
 TOPIC -Global state
 
