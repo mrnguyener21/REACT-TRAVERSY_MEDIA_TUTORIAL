@@ -62,6 +62,8 @@ TOPIC -Component Props
 
 
 TOPIC -PropTypes
+-its a built in type system for your properties
+-don't really need this 
 
 TOPIC -Styling
 
