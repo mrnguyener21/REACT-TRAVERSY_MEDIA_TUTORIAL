@@ -66,6 +66,21 @@ TOPIC -PropTypes
 -don't really need this 
 
 TOPIC -Styling
+-you can use a style sheet(what i normally already do)
+-you can also use style components or direct CSS in javascript as example:
+    <header>
+        <h1 style={{color:'red', backgroundColor:'black'}}>{title}</h1>
+    </header>
+-you can do it as a variable
+    <header>
+        <h1 style={color:'red', backgroundColor:'black'}>{title}</h1>
+    </header>
+
+    const headingStyle ={
+        {color:'red', backgroundColor:'black'}
+    }
+    //notice how since we are using a style variable we are only using single brackets when we call it in the styles argument for the h1 tag
+
 
 TOPIC -Button Component
 
