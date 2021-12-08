@@ -41,7 +41,24 @@ TOPIC -Creating a component
 
 
 TOPIC -Component Props
--
+-we can pass props through components 
+-we can also pass default props as shown in the example below:
+    const Header = (props) => {
+        return{
+            <header>
+                <h1>{props.title</h1>
+            </header>
+        }
+    }
+    //below is the defaultProps, so in this case if we don't use the prop in App.js(the file we import the header component to) then by default the header will show 'Hi this is the default title' as the default for the title prop 
+    Header.defaultProps = {
+        title: 'Hi this is the default title'
+        //we can keep adding more to this if there are more props within the component
+    }
+
+    export default Header
+
+-NOTE TO SELF, REMEMBER TO DESTRUCTURE WHEN USING PROPS SO THEN INSTEAD OF GOING props.title YOU CAN JUST WRITE title 
 
 
 TOPIC -PropTypes
