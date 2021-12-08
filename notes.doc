@@ -41,22 +41,76 @@ TOPIC -Creating a component
 
 
 TOPIC -Component Props
--
+-we can pass props through components 
+-we can also pass default props as shown in the example below:
+    const Header = (props) => {
+        return{
+            <header>
+                <h1>{props.title</h1>
+            </header>
+        }
+    }
+    //below is the defaultProps, so in this case if we don't use the prop in App.js(the file we import the header component to) then by default the header will show 'Hi this is the default title' as the default for the title prop 
+    Header.defaultProps = {
+        title: 'Hi this is the default title'
+        //we can keep adding more to this if there are more props within the component
+    }
+
+    export default Header
+
+-NOTE TO SELF, REMEMBER TO DESTRUCTURE WHEN USING PROPS SO THEN INSTEAD OF GOING props.title YOU CAN JUST WRITE title 
 
 
 TOPIC -PropTypes
+-its a built in type system for your properties
+-don't really need this 
 
 TOPIC -Styling
+-you can use a style sheet(what i normally already do)
+-you can also use style components or direct CSS in javascript as example:
+    <header>
+        <h1 style={{color:'red', backgroundColor:'black'}}>{title}</h1>
+    </header>
+-you can do it as a variable
+    <header>
+        <h1 style={color:'red', backgroundColor:'black'}>{title}</h1>
+    </header>
 
-TOPIC -Button Component
+    const headingStyle ={
+        {color:'red', backgroundColor:'black'}
+    }
+    //notice how since we are using a style variable we are only using single brackets when we call it in the styles argument for the h1 tag
+
+
+TOPIC -Button Component (EXAMPLE FOR REUSABLE REACT COMPONENT)
+-you can create anything into a component such as a buttons component so you can reuse the component without having to recreate the button everytime
+
 
 TOPIC -Events
+-when using react components, if you were to have an event it's best to pass the event as a prop to have it properly executed
 
-TOPIC -Tasks Component
+
 
 TOPIC -Create a list with .map()
+- you just map through your array to turn it in a list
+-can also return jsx elements with map
+
+
 
 TOPIC -State & useState Hook
+-to use state in react you use a Hook called useState below is how you import it:
+    import {useState} from 'react
+-state is immutable
+-you would use set to add or change things
+-in the example below, dailyData is the state that we use to fetch what is being mapped through and if we were to add or change anything to it we would then use setDailyData since state is immutable and is a one way road
+        const [dailyData, setDailyData] = useState([])
+
+    useEffect(() => {
+        const fetchAPI = async () => {
+            setDailyData(await fetchDailyData());
+        }
+        fetchAPI();
+    }, [])
 
 TOPIC -Global state
 
