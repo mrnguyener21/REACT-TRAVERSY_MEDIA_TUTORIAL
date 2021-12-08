@@ -23,8 +23,26 @@ TOPIC -Expressions in JSX
 
 TOPIC -Creating a component
 -to create different components of a website(header, pages, sections) it will all be done within the component folder
+-each component will have their own JS files in the component folder
+--GET ES7 REACT/REDUX/GRAPHQL/REAT-NATIVE SNIPPETS help create boiler plates
+-apparently we don't need import React from 'react' anymore if you don't use class
+-you will import each component into the App.js file and you tghen use the imported component like an HTML tag
+-ex: you imported a component named Header (Header.js) into your App.js file and you want to use it. so you do the following:
+    import Header from 'INSERT FILE LOCATION HERE' HERE YOU ARE IMPORTING THE HEADER COMPONENT INTO APP
+
+    const App = () => {
+        return(
+            <div>
+            <Header/> HERE YOU ARE USING THE IMPORTED HEADER COMPONENT BY CALLING IT AS A HTML TAG
+            </div>
+        )
+    }
+    export default App
+
 
 TOPIC -Component Props
+-
+
 
 TOPIC -PropTypes
 
