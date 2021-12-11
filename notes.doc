@@ -129,21 +129,6 @@ TOPIC -Delete task & prop drilling
         setTask(tasks.filter((task) => task.id !== id))
     }
 
--
-
-TOPIC -Optional message if no tasks
-
-TOPIC -Toggle reminder & conditional styling
-
-TOPIC - Add Task Form
-
-TOPIC - Form input state (controlled components)
-
-TOPIC - Add task submit
-
-TOPIC - showAddTask state
-
-TOPIC - Button toggle
 
 TOPIC - Build for production
 
