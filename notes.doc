@@ -123,20 +123,12 @@ TOPIC -Icons with react-icons
 -have to restart the users usually after the install
 
 TOPIC -Delete task & prop drilling
+-to change things, use the setState and whatever function to create that change. Below is an example where a function is being used to filter the prop id throughout the state by using the setState (in the example state is task and setState is setTasks)
 
-TOPIC -Optional message if no tasks
+    const deleteTask= (id) =>{
+        setTask(tasks.filter((task) => task.id !== id))
+    }
 
-TOPIC -Toggle reminder & conditional styling
-
-TOPIC - Add Task Form
-
-TOPIC - Form input state (controlled components)
-
-TOPIC - Add task submit
-
-TOPIC - showAddTask state
-
-TOPIC - Button toggle
 
 TOPIC - Build for production
 
