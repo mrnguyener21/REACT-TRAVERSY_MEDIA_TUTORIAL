@@ -115,10 +115,7 @@ TOPIC -State & useState Hook
 TOPIC -Global state
 -general you're gonna wnat a context.api or redux to store your state so you can pull and use them in multiple component
 -if not, you can put your states in the app.js folder and then pass the state as a prop that way you can still use the state in multiple components
--
 
-
-TOPIC -Task Component
 
 TOPIC -Icons with react-icons
 
